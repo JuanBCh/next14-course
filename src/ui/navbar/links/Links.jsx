@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "./navLink/navLink";
 
 export default function NavLinks() {
   const links = [
@@ -6,17 +6,27 @@ export default function NavLinks() {
     { title: "About", href: "/about" },
     { title: "Contact", href: "/contact" },
     { title: "Blog", href: "/blog" },
-    { title: "Login", href: "/login" },
   ];
+
+  //Temporary
+  const session = true;
+  const isAdmin = true;
+
   return (
-    <div>
+    <aside className="flex w-2/4 justify-between items-center ">
       {links.map((link, k) => {
-        return (
-          <Link key={k} href={link.href}>
-            {link.title}
-          </Link>
-        );
+        return <NavLink link={link} key={k} />;
       })}
-    </div>
+      {session ? (
+        <>
+          {isAdmin && <NavLink link={{ title: "Admin", href: "/admin" }} />}
+          <button className="shadow-inner bg-blue-900 rounded-full px-4 py-1 hover:font-bold hover:px-5">
+            LogOut
+          </button>
+        </>
+      ) : (
+        <NavLink link={{ title: "LogIn", href: "/login" }} />
+      )}
+    </aside>
   );
 }

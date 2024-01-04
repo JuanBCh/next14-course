@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --txt-cl-pry: #fff;
+  --txt-cl-sec: #505050;
+
+  --bg-cl-pry: rgb(15, 23, 42);
+}
+
+/* body {
+  background-color: var(--bg-cl-pry);
+  color: var(--txt-cl-pry);
+} */
