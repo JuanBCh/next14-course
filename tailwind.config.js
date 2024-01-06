@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         "dark-blue": "rgb(11, 11, 33)",
+        "semi-transparent": "rgba(200, 200, 259, 0.2)",
       },
       maxWidth: {
         "8xl": "90rem",

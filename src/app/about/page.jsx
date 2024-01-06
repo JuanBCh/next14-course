@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex justify-between p-9 pt-12">
+    <div className="flex justify-between p-9 pt-28">
       <aside className="max-w-2xl">
         <section className="pb-12">
           <h2 className="text-blue-500 text-2xl font-bold pb-12">

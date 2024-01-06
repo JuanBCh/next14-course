@@ -13,7 +13,7 @@ const Home = () => {
           impedit molestiae odit nam.
         </p>
         <div>
-          <button className="shadow-inner bg-blue-900 rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5 mr-7">
+          <button className="shadow-inner bg-blue-500 rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5 mr-7">
             Learn More
           </button>
           <button className="text-dark-blue shadow-inner bg-white rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5">
