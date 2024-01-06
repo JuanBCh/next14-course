@@ -20,7 +20,7 @@ export default function NavLinks() {
       {session ? (
         <>
           {isAdmin && <NavLink link={{ title: "Admin", href: "/admin" }} />}
-          <button className="shadow-inner bg-blue-900 rounded-full px-4 py-1 hover:font-bold hover:px-5">
+          <button className="shadow-inner bg-blue-900 rounded-md px-4 py-1 hover:font-bold hover:px-5">
             LogOut
           </button>
         </>
