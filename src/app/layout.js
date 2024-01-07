@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative h-screen bg-dark-blue text-white mx-auto jusify-center max-w-8xl flex flex-col">
+      <body className="relative h-screen bg-dark-blue text-white mx-auto jusify-center lg:max-w-8xl flex flex-col">
         <Navbar />
         {children}
         <Footer />

@@ -8,7 +8,7 @@ export default function NavLinks() {
     { title: "Blog", href: "/blog" },
   ];
   const styles = {
-    main: "flex w-2/4 justify-between items-center",
+    main: "md:w-3/5 lg:w-2/4 hidden md:flex justify-between items-center",
     logout:
       "shadow-inner bg-blue-500 rounded-md px-4 py-1 hover:font-bold hover:px-5",
   };
