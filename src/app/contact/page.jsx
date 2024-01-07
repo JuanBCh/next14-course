@@ -10,7 +10,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.main}>
+    <main className={styles.main}>
       <Image src="/contact.png" width={500} height={500} />
       <form className={styles.form}>
         <input
@@ -31,6 +31,6 @@ export default function Contact() {
         <textarea className={styles.textarea} placeholder="Message" />
         <button className={styles.button}>Send</button>
       </form>
-    </div>
+    </main>
   );
 }

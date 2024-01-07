@@ -1,38 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PostCard({ post }) {
+export default function PostCard({ postCard }) {
   const styles = {
-    card: "w-3/12 mx-1",
+    card: "w-2/6 mb-10",
     header: "flex justify-between items-center",
     imgDiv: "relative w-full h-96",
     img: "overflow-hidden",
-    date: "text-md text-gray-400 font-semibold -mx-2 transform -rotate-90",
-    title: "",
-    description: "",
-    link: "",
+    date: "text-md text-slate-300 font-semibold -ml-5 mr-5 w-32 transform -rotate-90",
+    title: "text-2xl font-bold my-3",
+    description: "text-sm text-gray-400 mb-3",
+    link: "underline underline-offset-2",
   };
 
   return (
-    <div className={styles.card}>
+    <section className={styles.card}>
       <header className={styles.header}>
         <div className={styles.imgDiv}>
           <Image
             className={styles.img}
-            src={post.hrefImg}
+            src={postCard.hrefImg}
             fill
+            priority
+            alt={`Image of ${postCard.title}`}
             style={{ objectFit: "cover" }}
           />
         </div>
-        <span className={styles.date}>{post.date}</span>
+        <span className={styles.date}>{postCard.date}</span>
       </header>
       <div>
-        <h3 className={styles.title}>{post.title}</h3>
-        <p className={styles.description}>{post.description}</p>
-        <Link className={styles.link} href={`/blog/${""}`}>
+        <h3 className={styles.title}>{postCard.title}</h3>
+        <p className={styles.description}>{postCard.shortDescription}</p>
+        <Link
+          className={styles.link}
+          href={`/blog/${postCard.title.toLowerCase()}`}
+        >
           Read More
         </Link>
       </div>
-    </div>
+    </section>
   );
 }
