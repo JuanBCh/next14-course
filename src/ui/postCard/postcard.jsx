@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function PostCard({ postCard }) {
   const styles = {
-    card: "w-2/6 mb-10",
+    card: "w-5/6 sm:w-3/6 lg:w-2/6 mb-10",
     header: "flex justify-between items-center",
     imgDiv: "relative w-full h-96",
     img: "overflow-hidden",

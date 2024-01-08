@@ -10,7 +10,7 @@ export default function About() {
     section2: "flex justify-between",
     h3: "text-3xl text-blue-500 font-bold",
     p: "text-sm pt-2",
-    image: "h-auto m-auto",
+    image: "h-auto m-auto hidden lg:block",
   };
 
   return (

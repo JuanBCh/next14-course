@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NavLinks from "./links/Links";
-import Image from "next/image";
+import ModuleNavLinks from "./links/moduleLinks";
 
 export default function Navbar() {
   const styles = {
@@ -16,6 +16,7 @@ export default function Navbar() {
             Lama
           </Link>
         </div>
+        <ModuleNavLinks />
         <NavLinks />
       </nav>
     </header>

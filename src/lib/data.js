@@ -56,3 +56,10 @@ export const blog = [
     },
   },
 ];
+
+export const navLinks = [
+  { title: "Homepage", href: "/" },
+  { title: "About", href: "/about" },
+  { title: "Contact", href: "/contact" },
+  { title: "Blog", href: "/blog" },
+];

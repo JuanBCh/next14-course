@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Home = () => {
   const styles = {
-    main: "w-full flex flex-col lg:flex-row items-center lg:justify-between p-9",
+    main: "w-full overflow-hidden flex flex-col lg:flex-row items-center lg:justify-between p-9",
     title:
       "text-7xl lg:text-8xl font-bold max-w-full lg:max-w-md leading-tight tracking-wide",
     description: "max-w-xl text-lg py-16 lg:py-10",
-    buttons: "flex w-full items-center flex-col md:flex-row",
+    buttons: "flex w-full items-center flex-col sm:flex-row",
     button1:
-      "shadow-inner bg-blue-500 rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5 mb-5 md:mb-0 md:mr-7",
+      "shadow-inner bg-blue-500 rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5 mb-5 sm:mb-0 sm:mr-7",
     button2:
       "text-dark-blue shadow-inner bg-white rounded-md w-44 h-12 py-1 hover:font-bold hover:px-5",
     brands: "pt-12 hidden lg:block",

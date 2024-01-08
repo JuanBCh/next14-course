@@ -1,14 +1,9 @@
 import NavLink from "./navLink/navLink";
+import { navLinks as links } from "@/lib/data";
 
 export default function NavLinks() {
-  const links = [
-    { title: "Homepage", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Contact", href: "/contact" },
-    { title: "Blog", href: "/blog" },
-  ];
   const styles = {
-    main: "md:w-3/5 lg:w-2/4 hidden md:flex justify-between items-center",
+    main: "hidden md:flex md:w-3/5 lg:w-2/4 justify-between items-center",
     logout:
       "shadow-inner bg-blue-500 rounded-md px-4 py-1 hover:font-bold hover:px-5",
   };

@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Contact() {
   const styles = {
-    main: "flex justify-between p-9 pt-36",
-    form: "w-6/12 flex flex-col flex-wrap justify-between",
+    main: "flex h-full justify-center lg:justify-between p-9 pt-16 lg:pt-36",
+    image: "hidden lg:block",
+    form: "w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 flex flex-col flex-wrap justify-between",
     input: "w-full p-7 rounded bg-semi-transparent",
     textarea: "w-full p-7 h-40 rounded bg-semi-transparent",
     button: "bg-blue-500 p-3 rounded",
@@ -11,7 +12,12 @@ export default function Contact() {
 
   return (
     <main className={styles.main}>
-      <Image src="/contact.png" width={500} height={500} />
+      <Image
+        className={styles.image}
+        src="/contact.png"
+        width={500}
+        height={500}
+      />
       <form className={styles.form}>
         <input
           className={styles.input}
