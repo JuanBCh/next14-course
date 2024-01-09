@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function About() {
   const styles = {
-    main: "flex justify-between p-9 pt-28",
+    main: "flex justify-between p-9 lg:pt-28",
     aside: "max-w-2xl",
     section1: "pb-12",
     subtitle: "text-blue-500 text-2xl font-bold pb-12",
     title: "text-6xl font-bold leading-tight pb-12",
-    section2: "flex justify-between",
+    section2: "flex flex-col items-center sm:flex-row justify-between",
+    section2Item: "flex flex-col items-center mb-6 sm:block",
     h3: "text-3xl text-blue-500 font-bold",
     p: "text-sm pt-2",
     image: "h-auto m-auto hidden lg:block",
@@ -29,15 +30,15 @@ export default function About() {
           </p>
         </section>
         <section className={styles.section2}>
-          <div>
+          <div className={styles.section2Item}>
             <h3 className={styles.h3}>10 K+</h3>
             <p className={styles.p}>Years of experience</p>
           </div>
-          <div>
+          <div className={styles.section2Item}>
             <h3 className={styles.h3}>234 K+</h3>
             <p className={styles.p}>People reached</p>
           </div>
-          <div>
+          <div className={styles.section2Item}>
             <h3 className={styles.h3}>5 K+</h3>
             <p className={styles.p}>Services and plugins</p>
           </div>

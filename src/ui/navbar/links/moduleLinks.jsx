@@ -30,7 +30,7 @@ export default function ModuleNavLinks() {
         onClick={() => setShow(!show)}
       />
       {show && (
-        <aside className={styles.module}>
+        <aside className={styles.module} onClick={() => setShow(!show)}>
           <Image
             src="/menu.png"
             width={40}

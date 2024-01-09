@@ -10,15 +10,16 @@ export default function SinglePostPage() {
     (post) => post.title.toLocaleLowerCase() == params.slug
   )[0];
   const styles = {
-    main: "flex h-full justify-between p-9",
-    image: "relative w-1/3 h-full",
-    aside: "w-7/12",
-    title: "text-6xl font-bold mb-16",
-    info: "flex justify-between items-center mb-16 w-2/5",
+    main: "flex flex-col md:flex-row md:h-full justify-between p-9",
+    image: "relative md:w-1/3 h-96 md:h-full",
+    aside: "md:w-7/12",
+    title: "text-6xl font-bold mt-8 md:mt-0 mb-8 md:mb-16",
+    info: "flex justify-between items-center mb-16 w-4/5 sm:w-3/5 md:w-4/5 lg:w-3/5 xl:w-2/5",
     avatar: "relative w-20 aspect-square rounded-full overflow-hidden",
     individualTitle: "font-bold text-slate-400 mb-1",
     individualInfo: " font-semibold",
-    description: "text-lg leading-10 indent-10",
+    description:
+      "text-center md:text-left text-2xl md:text-lg leading-10 indent-10",
   };
 
   return (
