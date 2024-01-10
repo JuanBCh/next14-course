@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PostCard({ postCard }) {
+export default function PostCard({ postCard, key }) {
   const styles = {
     card: "w-5/6 sm:w-3/6 lg:w-2/6 mb-10",
     header: "flex justify-between items-center",
@@ -14,7 +14,7 @@ export default function PostCard({ postCard }) {
   };
 
   return (
-    <section className={styles.card}>
+    <section className={styles.card} key={key}>
       <header className={styles.header}>
         <div className={styles.imgDiv}>
           <Image

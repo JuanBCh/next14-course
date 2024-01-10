@@ -8,6 +8,10 @@ export default function NavLinks() {
       "shadow-inner bg-blue-500 rounded-md px-4 py-1 hover:font-bold hover:px-5",
   };
 
+  //Temporary
+  const session = false;
+  const isAdmin = false;
+
   return (
     <aside className={styles.main}>
       {links.map((link, k) => {
@@ -15,11 +19,16 @@ export default function NavLinks() {
       })}
       {session ? (
         <>
-          {isAdmin && <NavLink link={{ title: "Admin", href: "/admin" }} />}
+          {isAdmin && (
+            <NavLink
+              key={"admin_key"}
+              link={{ title: "Admin", href: "/admin" }}
+            />
+          )}
           <button className={styles.logout}>LogOut</button>
         </>
       ) : (
-        <NavLink link={{ title: "LogIn", href: "/login" }} />
+        <NavLink key={"login_key"} link={{ title: "LogIn", href: "/login" }} />
       )}
     </aside>
   );
