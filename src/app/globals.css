@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --txt-cl-pry: #fff;
   --txt-cl-sec: #505050;
+  --txt-cl-pry: #fff;
 
   --bg-cl-pry: rgb(15, 23, 42);
 }
