@@ -8,10 +8,6 @@ export default function NavLinks() {
       "shadow-inner bg-blue-500 rounded-md px-4 py-1 hover:font-bold hover:px-5",
   };
 
-  //Temporary
-  const session = true;
-  const isAdmin = true;
-
   return (
     <aside className={styles.main}>
       {links.map((link, k) => {
