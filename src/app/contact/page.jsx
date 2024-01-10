@@ -17,6 +17,7 @@ export default function Contact() {
         src="/contact.png"
         width={500}
         height={500}
+        alt="contact image"
       />
       <form className={styles.form}>
         <input

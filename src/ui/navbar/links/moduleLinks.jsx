@@ -26,6 +26,7 @@ export default function ModuleNavLinks() {
         src="/menu.png"
         width={40}
         height={40}
+        alt="burguer menu"
         className={styles.image}
         onClick={() => setShow(!show)}
       />
@@ -35,6 +36,7 @@ export default function ModuleNavLinks() {
             src="/menu.png"
             width={40}
             height={40}
+            alt="burguer menu"
             className={styles.image}
             onClick={() => setShow(!show)}
           />
