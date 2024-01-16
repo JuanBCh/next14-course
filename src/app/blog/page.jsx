@@ -1,4 +1,4 @@
-import PostCard from "@/ui/postCard/postcard";
+import PostCard from "@/ui/postCard/PostCard";
 import { blog } from "@/lib/data.js";
 import { getPosts } from "@/lib/actions";
 
