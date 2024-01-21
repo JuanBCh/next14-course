@@ -18,6 +18,10 @@ module.exports = {
       maxWidth: {
         "8xl": "90rem",
       },
+      boxShadow: {
+        white:
+          "0 1px 3px 0 rgb(255, 255, 255), 0 1px 2px -1px rgb(255, 255, 255)",
+      },
     },
   },
   plugins: [],
